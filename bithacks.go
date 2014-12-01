@@ -18,6 +18,10 @@ func PowerOfTwo(n int) bool {
 	return n != 0 && (n&(n-1)) == 0
 }
 
+func PowerOfTwo64(n int64) bool {
+	return n != 0 && (n&(n-1)) == 0
+}
+
 func RoundUpPowerOfTwo32(n int32) int32 {
 	n--
 	n |= n >> 1
